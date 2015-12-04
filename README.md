@@ -1,6 +1,6 @@
 ### 我的博客
-
-地址：[http://yansu.org](http://yansu.org)
+> http://dingyiming.github.io
+> fork的博客：[http://yansu.org](http://yansu.org)
 
 ### 安装说明
 

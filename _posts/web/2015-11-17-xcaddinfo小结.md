@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 20151103-xcaddinfo-laravel小练习-小结
-category: 技术
+title: 20151103-xcaddinfo-小练习-小结
+category: web之路
 tags: xc,laravel
 keywords: xc,laravel
 description: laravel练习

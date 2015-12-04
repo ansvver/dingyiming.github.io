@@ -6,14 +6,9 @@ title: 丁一鸣
 ## 我
 
 * QQ:315129552
-* segmentfault:
-* 新浪微博
-* github:
-* twitter:
-* Facebook:
+* [segmentfault](http://segmentfault.com/u/dingyiming)
+* [新浪微博](http://weibo.com/vimdingyiming/profile?rightmod=1&wvr=6&mod=personinfo)
+* [github](https://github.com/dingyiming)
+* [twitter](https://twitter.com/vimdingyiming)
+* [Facebook](https://www.facebook.com/profile.php?id=100009968356554)
 
-## 博客平台
-
-这个博客通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll) 修改生成，非常感谢 [Peiwen Lu](https://github.com/P233) 开发出这么漂亮的主题。
-
-我博客的源码托管在[Github](https://github.com/dingyiming.github.io)上，如果有任何改进意见，欢迎讨论。

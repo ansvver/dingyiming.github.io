@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【XC】20151103addinfo-laravel小练习-小结
+title: addinfo-laravel小练习-小结
 category: XC
 tags: xc,laravel
 keywords: xc,laravel

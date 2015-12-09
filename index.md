@@ -3,7 +3,7 @@ layout: post
 title: 丁一鸣
 ---
 
-## 我
+> 南京，西祠胡同，PHP
 
 * QQ:315129552
 * [segmentfault](http://segmentfault.com/u/dingyiming)

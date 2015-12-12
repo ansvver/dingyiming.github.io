@@ -7,15 +7,15 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 丁一鸣
+  name: ime丁一鸣
   email: vimdingyiming@qq.com
   link: http://dingyiming.github.io
   weibo: http://weibo.com/vimdingyiming
   github: http://github.com/dingyiming
 
 # 站点信息
-title: 丁一鸣
-description: 丁一鸣的博客
+title: ime丁一鸣
+description: ime丁一鸣的日志
 url: http://dingyiming.github.io
 rss_url: /pages/atom.xml
 
@@ -30,4 +30,4 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: dingyiming
+  shortname: ime丁一鸣

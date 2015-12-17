@@ -9,26 +9,31 @@ description: angularjs初体验
 
 > 很棒的学习网站 ： https://www.codecademy.com/
 
-# Awesome! You built an AngularJS app. How does it work?
+## Awesome! You built an AngularJS app. How does it work?
 
 * In app.js, we created a new `module` named MyApp. A module contains the different components of an AngularJS app.
+
 * Then, in` index.html `we added `<body ng-app="myApp">`. The `ng-app `is called a directive. It tells AngularJS that the MyApp module will live within the <body> element, termed the application's scope. In other words, we used the ng-app directive to define the application scope.
+
 * In `MainController.js ` we created a new `controller` named MainController. `A controller manages the app's data`. Here we `use the property title to store a string`, and` attach it to $scope`.
+
 * Then, in` index.html`, we added `<div class="main" ng-controller="MainController">`. Like ng-app, ng-controller is a directive that defines the controller scope. This means that properties attached to` $scope` in` MainController` become available to use within `<div class="main">`.
+
 * Inside `<div class="main">` we accessed $scope.title using` {{ title }}`. This is called an expression. Expressions are used to display values on the page.
+
 * The value of title showed up when we viewed the app in the browser.
 
-# Modules 
+## Modules 
 
 ```
-# app.js
+// app.js
 var app = angular.module("myApp",[]);
 ```
 
-# 视图
+## 视图
 
 ```
-#index.html
+// index.html
 ····
   <body ng-app="myApp">
   ···
@@ -36,10 +41,10 @@ var app = angular.module("myApp",[]);
 ···
 ```
 
-# 控制器
+## 控制器
 
 ```
-# MainController.js
+// MainController.js
 app.controller('MainController',['$scope',function($scope){
     $scope.title ='Hello Angularjs';
 }]);
@@ -61,20 +66,11 @@ Let's do a quick review:
 * A filter formats the value of an expression
 
 
-```
-# index.html
-   <div ng-repeat="product in products" class="col-md-6">
-          <div class="thumbnail">
-            <img src="img/the-book-of-trees.jpg">
-            <p class="title">{{ product.name | uppercase }} </p>
-            <p class="price">{{ product.price | currency }} </p>
-            <p class="date"> {{ product.pubdate | date }}</p>
-          </div>
-```
 
+MainController
 
 ```
-# MainController
+// MainController
     $scope.products = [ 
   { 
     name: 'The Book of Trees', 

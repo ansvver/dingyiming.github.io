@@ -3,7 +3,7 @@ layout: post
 title: 丁一鸣
 ---
 
-> 南京，PHP、nodejs、Ruby、react
+> 南京，PHP、nodejs、Ruby、react、meteor
 > 简简单单，努力做个开发者。
 
 ### 联系方式

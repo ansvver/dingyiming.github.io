@@ -3,7 +3,8 @@ layout: post
 title: 丁一鸣
 ---
 
-> 南京，西祠胡同，PHP
+> 南京，PHP、nodejs、Ruby、react
+> 简简单单，努力做个开发者。
 
 * QQ:315129552
 * [segmentfault](http://segmentfault.com/u/dingyiming)
@@ -12,3 +13,4 @@ title: 丁一鸣
 * [twitter](https://twitter.com/vimdingyiming)
 * [Facebook](https://www.facebook.com/profile.php?id=100009968356554)
 
+![](http://b267.photo.store.qq.com/psb?/V13yWZAH1dSi4T/O5D6mkEXfwp2Jl67FpchQpmYwv4pcfv17Z9zjPRAhWg!/b/dAAiKJ.aIgAA&bo=IAPCAQAAAAABA8Q!&rf=viewer_4)

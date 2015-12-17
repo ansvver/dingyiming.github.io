@@ -26,5 +26,5 @@ title: 丁一鸣
 
 ![2013-骑行滇藏线](https://github.com/dingyiming/dingyiming.github.io/blob/master/pics/me2.jpeg?raw=true)
 
-
+> 是否还能回到当初，蓝天白云。。。
 

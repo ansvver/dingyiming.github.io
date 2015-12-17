@@ -4,7 +4,7 @@ title: Ubuntu安装Composer
 category: 技术
 tags: ubuntu
 keywords: ubuntu,composer
-description:Ubuntu安装Composer
+description: Ubuntu安装Composer
 ---
 
 0、Ubuntu 安装curl 

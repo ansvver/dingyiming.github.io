@@ -72,6 +72,7 @@ Let's do a quick review:
           </div>
 ```
 
+
 ```
 # MainController
     $scope.products = [ 

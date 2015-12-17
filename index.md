@@ -29,4 +29,5 @@ title: 丁一鸣
 
 > 是否还能回到当初，蓝天白云。。。
 
-![](https://github.com/dingyiming/dingyiming.github.io/blob/master/pics/me3.png?raw=true)
+![imedingyiming](https://github.com/dingyiming/dingyiming.github.io/blob/master/pics/me3.png?raw=true)
+微信号：imedingyiming

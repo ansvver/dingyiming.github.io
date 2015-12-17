@@ -18,9 +18,7 @@ title: 丁一鸣
 ### 简单经历
 
 * 2015-大四上南京西祠胡同PHP实习
-(继续学习了asp、laravel、lumen、angularjs、react、vue、webpack、nodejs、meteor、ruby、rails等持续学习下去)
 * 2015-大三开始自学web开发
-（从html5、css3、js、jquery、javaweb、bootstrap、amazeui、php、thinkphp、yii2、android等一步步学下去）
 * 2014-大二南京肯德基德餐厅兼职
 * 2013-大一暑假骑行滇藏线(云南大理到西藏拉萨2000多公里20多天，单车：捷安特atx770)
 * 之前，懵懂爱玩游戏，爱幻想互联网的少年

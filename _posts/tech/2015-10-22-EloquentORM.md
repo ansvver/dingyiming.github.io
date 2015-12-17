@@ -1,10 +1,10 @@
 ---
 layout: post
-title: EloquentORM的CURD
+title: Eloquent的CURD
 category: 技术
 tags: laravel
 keywords: laravel
-description:laravel的EloquentORM的CURD
+description: Eloquent的CURD
 ---
 
 > 学一下,只记有用的关键点，其他用到时候查，不可急于大而全

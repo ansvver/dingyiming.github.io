@@ -20,6 +20,7 @@ title: 丁一鸣
 * 2015-南京西祠胡同PHP实习
 * 2014-南京肯德基德餐厅兼职
 * 2013-大一暑假骑行滇藏线(云南大理到西藏拉萨2000多公里20多天，单车：捷安特atx770)
+* 之前，懵懂爱玩游戏，爱幻想互联网的少年
 
 ![](https://github.com/dingyiming/dingyiming.github.io/blob/master/pics/me1.jpeg?raw=true)
 

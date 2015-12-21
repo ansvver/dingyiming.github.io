@@ -14,6 +14,12 @@ title: 丁一鸣
 * [github](https://github.com/dingyiming)
 * [twitter](https://twitter.com/vimdingyiming)
 * [Facebook](https://www.facebook.com/profile.php?id=100009968356554)
+
+### 2016毕设特辑
+
+> 逐步实践的过程，一点点成长的积累
+
+* 2015-12-21 [2016我的毕设1](http://dingyiming.github.io/2015/12/21/%E6%AF%95%E8%AE%BE1.html)
  
 ### 简单经历
 

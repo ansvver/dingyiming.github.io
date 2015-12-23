@@ -9,6 +9,9 @@ description: rails之路
 
 ## Demo2 toy app
 
+> Rails Tutorial第二章
+> 源码：https://bitbucket.org/imedingyiming/demo2-toyapp
+
 ### 新建
 
 ```

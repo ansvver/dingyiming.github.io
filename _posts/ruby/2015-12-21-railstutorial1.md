@@ -7,6 +7,9 @@ keywords: ruby,rails
 description: rails之路
 ---
 
+
+![](https://github.com/dingyiming/learn-Ruby-rails/blob/master/pics/railstutorials.png?raw=true)
+
 ## Demo1 - HelloWorld
 
 > 来自 rails tutorial 3rd

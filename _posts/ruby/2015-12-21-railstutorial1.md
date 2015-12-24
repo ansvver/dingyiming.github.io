@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RailsTutorial笔记1
+title: RailsTutorial笔记1-HelloWorld
 category: Ruby
 tags: rails
 keywords: ruby,rails

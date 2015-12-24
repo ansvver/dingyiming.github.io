@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RailsTutorial笔记2
+title: RailsTutorial笔记2-玩具应用
 category: Ruby
 tags: rails
 keywords: ruby,rails

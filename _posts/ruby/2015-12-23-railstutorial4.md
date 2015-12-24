@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RailsTutorial笔记4
+title: RailsTutorial笔记4-ruby基础
 category: Ruby
 tags: rails
 keywords: ruby,rails

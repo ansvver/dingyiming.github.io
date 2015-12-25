@@ -35,6 +35,7 @@ description: 【XC】20151103addinfo-laravel小练习-小结
 * 学习了laravel
 
 * 创建项目 ：打开终端，新建文件夹`mkdir dev`,下载laravel项目源码
+
 ```
 composer create-project laravel/laravel addinfo
 
@@ -52,6 +53,7 @@ composer create-project laravel/laravel addinfo
 > 我先用bootstrap做了下页面，也由于一些原因，还没用上`SCSS`,希望后面有时间可以尝试改进一下，在此就不放页面样式了，主要做些关键点的记录，现在想想还是一团糟的，得抓重点回忆。
 
 # 关节点
+
  我觉着在往常的web应用中主要是这几个关节点：
  1.数据库连接配置： `.env`
  2.路由 ：  (访问的URL)从哪里去找谁(一般找控制器) http://laravelacademy.org/post/53.html
@@ -73,10 +75,13 @@ composer create-project laravel/laravel addinfo
  6.在laravel重要的ServiceProvider在`config/app.php`里配置后可在全局快捷使用；
  7.消息反馈 ：参考：http://laravelacademy.org/post/68.html
 在控制器中使用larvel一次性Session:
+
 ```
  $request->session()->flash('status1', $msg1);
 ```
+
 在视图中判断显示
+
 ```
 @if(session('status1'))
     <div id="status"   class="alert alert-success pull-right" role="alert"
@@ -100,6 +105,7 @@ composer create-project laravel/laravel addinfo
 ```
 
 # 登录 
+
 > 我把用户信息的增改删查作为`resource`路由，接着是因为用户信息的操作是需要用户登录才操作的，所以，我跟着laravel学院的教程做了下laravel内置的auth注册登录；
 > 使用laravel内置 auth，
 > 参考资料：http://laravelacademy.org/post/1258.html
@@ -124,6 +130,7 @@ composer create-project laravel/laravel addinfo
 laravel在auth中使用了`  'password' => bcrypt($data['password'])` 即使用了内置的`bcrypt()`方法加密，这是不可逆的`Hash加密`,并且我自己还比对了下，发现每次相同字符串生成的密文还是不同的，如果需要验证这个加密，就使用`Hash::check($input, $oldpwd)`验证，返回值为`true/false`
 
 * 显示错误
+
 ```
 @if (count($errors) > 0)
 //此处添加错误反馈，
@@ -136,6 +143,7 @@ laravel在auth中使用了`  'password' => bcrypt($data['password'])` 即使用�
 # 用户信息增改删查与权限区分
 * 权限区分 http://laravelacademy.org/post/577.html
 我在表中添加了用于区分权限的字段，在`app/Providers/AuthServiceProvider.php`中进行权限分配：
+
 ```
  public function boot(GateContract $gate)
     {
@@ -157,16 +165,21 @@ laravel在auth中使用了`  'password' => bcrypt($data['password'])` 即使用�
         });
     }
 ```
+
 * 路由
+
 ```
 //登录用户才能访问进行用户信息操作
 Route::group(['middleware' => 'auth'], function () {
     resource('userinfo', 'UserinfosController');
 });
 ```
+
 * Model设置,对应表、可填充字段、表关联
+
 > 资料：http://laravelacademy.org/post/140.html
 > 逆向的远层一对多：https://github.com/znck/belongs-to-through
+
 ```
  protected $table = 'userinfos';
 
@@ -194,7 +207,9 @@ Route::group(['middleware' => 'auth'], function () {
         $query->OrderBy('userinfos.id', 'desc');
     }
 ```
+
 * 控制器
+
 ```
 //分权限显示用户信息
     public function index(Request $req)
@@ -215,7 +230,9 @@ Route::group(['middleware' => 'auth'], function () {
         return $this->responseResult(null, $req, '查询失败', null, 'userinfo');
     }
 ```
+
 * 自建的数据仓库 App/Repositories/UserinfoRepository.php
+
 ```
 public function selectAll()
     {
@@ -239,20 +256,25 @@ public function selectAll()
     }
 
 ```
+
 * 视图，省略。。。
+
 > 上面主要记录了分权限进行的录入信息查看，其它增改删都会基于这里，具体看源码
 
 
 # 基于权限的员工管理
 
 * `routes.php`
+
 ```
 //员工管理
 Route::group(['middleware' => 'auth'], function () {
     resource('users', 'UsersController');
 });
 ```
+
 * Model :`app/User.php`
+
 ```
   protected $table = 'users';
     protected $fillable = ['email', 'password', 'realname', 'dep_id', 'authority'];
@@ -270,7 +292,9 @@ Route::group(['middleware' => 'auth'], function () {
         return $this->belongsTo('App\Department', 'dep_id', 'id');
     }
 ```
+
 * 控制器 `UsersController.php`
+
 ```
 //显示员工管理页面
     public function index(Request $request)
@@ -290,6 +314,7 @@ Route::group(['middleware' => 'auth'], function () {
 ```
 
 * `UserRepository.php`
+
 ```
 class UserRepository implements UserRepositoryInterface
 {
@@ -343,7 +368,9 @@ class UserRepository implements UserRepositoryInterface
         return $this->responseResult(null, $req, '查询不到你要的内容', '', 'userinfo');
     }
 ```
+
 * 对搜索也限定了权限
+
 ```
 public function search($req, $field, $data)
     {
@@ -370,7 +397,9 @@ public function search($req, $field, $data)
 ```
 
 # 修改个人密码
+
 * 关键也就是前面在登录提到的加密和验证密码的问题，用了laravel自带方法：`bcrypt()`(即`Hash::make()`)和`Hash::check('输入的老密码'，'原密码')`
+
 ```
 //更改密码
     public function updatereset(Request $request)
@@ -395,10 +424,13 @@ public function search($req, $field, $data)
 
 
 # 前端vue-form验证
+
 > vuejs官网 : http://cn.vuejs.org
 > vuejs: https://github.com/vuejs/vue
 > vue-form : https://github.com/fergaldoyle/vue-form
+
 * 页面需要添加一些标识
+
 ```
 <div class="main-title container shadow-z-1" id="app">
                     <form v-form name="myform" @submit.prevent="onSubmit" method="post" action="/auth/login" id="myform"
@@ -444,7 +476,9 @@ public function search($req, $field, $data)
                     </form>
                 </div>
 ```
+
 * js代码
+
 ```
 new Vue({
     el: '#app',
@@ -463,9 +497,12 @@ new Vue({
 ```
 
 # dingo/API + vue-resource 唯一性判断
+
 > dingo/API : https://github.com/dingo/api
 > vue-resource : https://github.com/vuejs/vue-resource
+
 * composer.json
+
 ```
  "require": {
         "php": ">=5.5.9",
@@ -475,12 +512,16 @@ new Vue({
         "dingo/api": "1.0.*@dev"
     },
 ```
+
 * app.php配置
+
 ```
 //dingo/api
 Dingo\Api\Provider\LaravelServiceProvider::class
 ```
+
 * `.env`配置
+
 ```
 API_STANDARDS_TREE=vnd
 API_PREFIX=api
@@ -490,6 +531,7 @@ API_DEBUG=true
 ```
 
 * 路由
+
 ```
 //dingo/api
 $api = app('Dingo\Api\Routing\Router');
@@ -502,15 +544,18 @@ $api->version('v1', function ($api) {
 ```
 
 * app/Api/Controllers/BaseController.php
+
 ```
 class BaseController extends Controller
 {
     use Helpers;//使用Dingo内置帮助函数
 }
 ```
+
 * 其它Controller继承BaseController.php，从而使用Dingo内置帮助函数
 
 * vue-resource https://github.com/vuejs/vue-resource
+
 ```
  onephone: function () {
             this.$http.get('/api/onephone/' + this.model.phone.trim(), function (data, status, request) {
@@ -527,9 +572,11 @@ class BaseController extends Controller
 ```
 
 # 添加Oauth2.0
+
 > laravel-Oauth2.0 :https://github.com/lucadegasperi/oauth2-server-laravel
 
 * 配置
+
 ```
  'providers' => [
 //Oauth2.0
@@ -540,12 +587,15 @@ LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider::class,]
 'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,]
 
 ```
+
 * 数据表生成
+
 ```
 php artisan migrate
 ```
 
 * 路由
+
 ```
 //Oauth2登录
 Route::post('oauth/access_token', function () {
@@ -557,7 +607,9 @@ Route::post('oauth/access_token', function () {
 
 
 # 拓展
+
 > 或者说接下来还需要完善的一些东西
+
 * scss页面重构，现在的页面的确很low；
 * 把前端验证通过`vuejs、vue-form、vue-resource`进一步完善；
 * 学习`vue-router`的使用节省不必要的跳转；

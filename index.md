@@ -19,7 +19,8 @@ title: 丁一鸣
 
 > 逐步实践的过程，一点点成长的积累
 
-* 2015-12-21 [2016我的毕设1](http://dingyiming.github.io/2015/12/21/%E6%AF%95%E8%AE%BE1.html)
+* 2015-12-21 [2016我的毕设1-初步策划](http://dingyiming.github.io/2015/12/21/%E6%AF%95%E8%AE%BE1.html)
+* 2015-12-30 [2016我的毕设2-完成基本注册登陆页面](http://dingyiming.github.io/2015/12/30/%E6%AF%95%E8%AE%BE2.html)
  
 ### 简单经历
 

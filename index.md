@@ -5,6 +5,7 @@ title: 丁一鸣
 
 > 南京，PHP、nodejs、vuejs
 > 简简单单，努力做个开发者。
+> [点击查看我的2016简历](https://raw.githubusercontent.com/dingyiming/dingyiming.Resumes/master/2016%E7%AE%80%E5%8E%86.jpg)
 
 ### 联系方式
 

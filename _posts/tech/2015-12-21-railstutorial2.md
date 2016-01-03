@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RailsTutorial笔记2-玩具应用
-category: Ruby
+category: 技术
 tags: rails
 keywords: ruby,rails
 description: rails之路

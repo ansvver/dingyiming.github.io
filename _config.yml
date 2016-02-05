@@ -1,12 +1,12 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 kramdown:
   input: GFM
 
 # 作者信息
-author: 
+author:
   name: ime丁一鸣
   email: vimdingyiming@qq.com
   link: http://dingyiming.github.io
